@@ -1,0 +1,40 @@
+h1{
+    text-align: center;
+}
+
+.highlight {
+    fill: #3E54AC;
+}
+
+.filter {
+    font-size: 17px;
+    margin-left: 190px;
+    margin-top: .5em;
+}
+
+.sorting {
+    font-size: 17px;
+    margin-left: 20px;
+    margin-top: .5em;
+    margin-right: 10px;
+}
+
+.update {
+    font-size: 13px;
+    margin-top: .7em;
+}
+
+.barChart{
+    max-height: 1000px;
+    max-width: 1600px;
+}
+
+.tooltip{
+    border: 1px solid wheat;
+    background-color: wheat;
+    border-radius: 5px;
+}
+
+.highlight{
+    fill: #FD7F20;
+}
