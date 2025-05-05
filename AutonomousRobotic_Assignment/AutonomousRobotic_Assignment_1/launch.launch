@@ -1,0 +1,6 @@
+<launch>
+<node pkg="turtlesim" name="Turtle" type="turtlesim_node" output="screen" />
+<node pkg="turtle_time" name="spawnTurtle" type="spawnturtle"  />
+<node pkg="turtle_time" name="drawTurtle" type="mainfunc"  />
+<node pkg="turtle_time" name="Subscriber" type="turtle_listerner" launch-prefix="xterm -e" output="screen"/>
+</launch>
