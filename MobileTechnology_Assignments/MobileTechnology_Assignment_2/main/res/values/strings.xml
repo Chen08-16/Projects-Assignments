@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">My Expenses</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!-- Adding Data Part -->
+    <string name="title_text">Add Daily Expenses</string>
+    <string name="textView2_text">Date</string>
+    <string name="text_date_input_hint">Enter Expenses Date</string>
+    <string name="textView3_text">Amount</string>
+    <string name="textView4_text">Category</string>
+    <string name="textView5_text">Payment Method</string>
+    <string name="radio_cash">Cash</string>
+    <string name="radio_credit_card">Credit Card</string>
+    <string name="radio_mobile_wallet">Mobile Wallet</string>
+    <string name="textView6_text">Extra Description</string>
+    <string name="button_text_clear">Clear</string>
+    <string name="button_text_save">Save</string>
+    <string name="button_text_back">Back</string>
+    <string name="text_amount_hint">Enter Amount</string>
+    <string name="text_descriptions_hint">Descriptions</string>
+    <string name="action_add_text">Add</string>
+    <string name="action_update_text">Update</string>
+    <string name="action_delete_text">Delete</string>
+    <string name="textViewName_text">Name</string>
+    <string name="text_name_hint">Enter Expenses Name</string>
+
+    <!-- Update Data Part -->
+    <string name="title1">Update Daily Expense</string>
+
+    <string-array name="category_selection1">
+        <item>Food</item>
+        <item>Vegetables</item>
+        <item>Seafood</item>
+        <item>Grains</item>
+        <item>Meats</item>
+        <item>Dairy</item>
+        <item>Fruits</item>
+        <item>Drinks</item>
+        <item>Desserts</item>
+    </string-array>
+    <string-array name="category_selection2">
+        <item>Breakfast</item>
+        <item>Lunch</item>
+        <item>Dinner</item>
+    </string-array>
+</resources>

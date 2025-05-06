@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:importantForAutofill="no"
+    tools:context=".AddDataActivity">
+
+    <TextView
+        android:id="@+id/Title_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:text="@string/title1"
+        android:textSize="@dimen/title_text_size"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/text_name_input_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/text_name_hint"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/textViewDate_update"
+        app:layout_constraintTop_toBottomOf="@+id/Title_update" />
+
+    <TextView
+        android:id="@+id/textViewName_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/textViewName_text"
+        android:textSize="@dimen/common_text_size"
+        app:layout_constraintEnd_toStartOf="@id/text_date_input_update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title_update" />
+
+    <EditText
+        android:id="@+id/text_date_input_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/text_date_input_hint"
+        android:importantForAutofill="no"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/textViewDate_update"
+        app:layout_constraintTop_toBottomOf="@+id/text_name_input_update" />
+
+    <TextView
+        android:id="@+id/textViewDate_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="22dp"
+        android:text="@string/textView2_text"
+        android:textSize="@dimen/common_text_size"
+        app:layout_constraintEnd_toStartOf="@id/text_date_input_update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewName_update" />
+
+    <EditText
+        android:id="@+id/text_amount_input_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/text_amount_hint"
+        android:importantForAutofill="no"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/textViewAmount_update"
+        app:layout_constraintTop_toBottomOf="@+id/text_date_input_update" />
+
+    <TextView
+        android:id="@+id/textViewAmount_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textView3_text"
+        android:textSize="@dimen/common_text_size"
+        app:layout_constraintEnd_toStartOf="@id/text_amount_input_update"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate_update" />
+
+    <TextView
+        android:id="@+id/textViewCategory_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/textView4_text"
+        android:textSize="@dimen/common_text_size"
+        app:layout_constraintEnd_toStartOf="@id/text_amount_input_update"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAmount_update" />
+
+    <Spinner
+        android:id="@+id/categorySelection_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toStartOf="@+id/categorySelection2_update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCategory_update" />
+
+    <Spinner
+        android:id="@+id/categorySelection2_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/categorySelection_update"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCategory_update" />
+
+    <TextView
+        android:id="@+id/payment_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView5_text"
+        android:textSize="@dimen/common_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categorySelection_update" />
+
+    <RadioGroup
+        android:id="@+id/paymentSelection_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:checkedButton="@id/radioButton_cash"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payment_method">
+
+        <RadioButton
+            android:id="@+id/radioButton_cash_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_cash" />
+
+        <RadioButton
+            android:id="@+id/radioButton_credit_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_credit_card" />
+
+        <RadioButton
+            android:id="@+id/radioButton_mobile_update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/radio_mobile_wallet" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewDescription_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/textView6_text"
+        android:textSize="@dimen/common_text_size"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/paymentSelection_update" />
+
+    <EditText
+        android:id="@+id/text_Extra_Description_input_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ems="10"
+        android:hint="@string/text_descriptions_hint"
+        android:importantForAutofill="no"
+        android:inputType="textLongMessage|textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescription_update" />
+
+    <Button
+        android:id="@+id/button_clear_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/button_text_clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_save_update"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_Extra_Description_input_update" />
+
+    <Button
+        android:id="@+id/button_save_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/button_text_save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_back_update"
+        app:layout_constraintStart_toEndOf="@id/button_clear_update"
+        app:layout_constraintTop_toBottomOf="@+id/text_Extra_Description_input_update" />
+
+    <Button
+        android:id="@+id/button_back_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/button_text_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/button_save_update"
+        app:layout_constraintTop_toBottomOf="@+id/text_Extra_Description_input_update" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="VerLayTop1">40dp</dimen>
+    <dimen name="VerLayTop2">100dp</dimen>
+    <dimen name="VerLayTop3">75dp</dimen>
+    <dimen name="VerLayTop4">10dp</dimen>
+    <dimen name="VerLayTop5">50dp</dimen>
+    <dimen name="VerLayTop6">3dp</dimen>
+    <dimen name="VerLayTop7">15dp</dimen>
+    <dimen name="VerLayBottom1">40dp</dimen>
+    <dimen name="VerLayBottom2">5dp</dimen>
+    <dimen name="VerLayLeft1">30dp</dimen>
+    <dimen name="VerLayLeft2">10dp</dimen>
+    <dimen name="VerLayRight">30dp</dimen>
+    <dimen name="textSize1">35sp</dimen>
+    <dimen name="textSize2">24sp</dimen>
+    <dimen name="textSize3">50sp</dimen>
+    <dimen name="textSize4">40sp</dimen>
+
+</resources>

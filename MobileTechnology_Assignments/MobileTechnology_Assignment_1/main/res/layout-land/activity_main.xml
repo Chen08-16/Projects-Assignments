@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titleDisplay"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/VerLayTop6"
+        android:fontFamily="sans-serif-light"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="@dimen/textSize1"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="TextContrastCheck" />
+
+    <LinearLayout
+        android:id="@+id/LinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:gravity="center|top|center_vertical"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ExtraText">
+
+
+        <TextView
+            android:id="@+id/showresult"
+            android:layout_width="350dp"
+            android:layout_height="55dp"
+            android:text="@string/defaultresult"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/textSize4" />
+
+        <EditText
+            android:id="@+id/input"
+            android:layout_width="400dp"
+            android:layout_height="48dp"
+            android:layout_margin="5dp"
+            android:autofillHints="@string/entertext"
+            android:hint="@string/entertext"
+            android:inputType="number|numberDecimal"
+            android:textAlignment="center"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/textSize2"
+            tools:ignore="TextContrastCheck,TextContrastCheck" />
+
+        <Spinner
+            android:id="@+id/selection"
+            android:layout_width="275dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="@dimen/VerLayTop6"
+            android:entries="@array/option_array"
+            android:popupBackground="@color/cardview_dark_background" />
+
+        <LinearLayout
+            android:id="@+id/LinearLayout2"
+            android:layout_width="400dp"
+            android:layout_height="75dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonConvert"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="150dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="@dimen/VerLayLeft1"
+                android:layout_marginTop="@dimen/VerLayTop4"
+                android:backgroundTint="@android:color/holo_green_dark"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/convert"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:rippleColor="#A59999" />
+
+            <Button
+                android:id="@+id/buttonClear"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/VerLayLeft1"
+                android:layout_marginTop="@dimen/VerLayTop4"
+                android:layout_marginEnd="@dimen/VerLayRight"
+                android:backgroundTint="@android:color/holo_red_light"
+                android:fontFamily="sans-serif-light"
+                android:text="@string/clear"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
